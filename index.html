@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <title></title>
+  </head>
+  <body>
+
+  	<div class="container mt-5">
+  		<div class="speechbox text-center mx-auto">
+  			<img src="src/1.png" id="logo" alt="Logo">
+  			<div class="row">
+  				<div class="col-sm-12 col-md-6 offset-md-3">
+  					<form>
+	  					<div class="form-group mt-3">
+							  <textarea id="text" class="form-control form-control-lg" placeholder="Start Typing ..."></textarea>
+	  					</div>
+	  					<div class="form-group text-danger">
+	  						<label for="rate">Rate</label>
+	  						<div class="badge badge-primary float-right mt-2" id="rateValue">1</div>
+	  						<input type="range" class="form-control-range slider" min="0.5" max="2" value="1" step="0.1" id="rate">	
+	  						<label for="pitch">Pitch</label>
+	  						<div class="badge badge-primary float-right mt-2 " id='pitchValue'>1.2</div>
+	  						<input type="range" class="form-control-range slider" min="0.5" max="2" value="1.2" step="0.1" id="pitch">	
+	  					</div>
+	  					<div class="form-group">
+	  						<select class="form-control" id="language">
+	  						</select>
+	  					</div>
+	  					<button type="submit" id="btnSubmit" class="btn btn-primary btn-lg btn-block">Speech It</button>
+  					</form>
+
+  					
+  				</div>
+  			</div>
+  		</div>
+  		
+  	</div>
+  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  	<script src="src/main.js" type="text/javascript"></script>
+  </body>
+</html>
